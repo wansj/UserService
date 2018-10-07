@@ -13,3 +13,6 @@ npm install
 安装速度可能有点慢（如果你选择使用windows-build-tools方式安装的话）
 # 启动
 npm run dev
+
+# 说明
+直接修改src/下面的文件不会起效，因为micro-dev使用的是dist/目录下面编译后文件，所以最好在webstorm中配置一个babel File Wather，这样当src/下面的源文件改动后会自动编译到dist目录下面。因为在项目源码中大量使用了es6语法，所以编译是必须的。
